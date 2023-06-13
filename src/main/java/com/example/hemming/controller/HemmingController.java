@@ -9,12 +9,12 @@ public class HemmingController {
 
     String msg = "Keine Nummer übergeben";
 
-    @RequestMapping(path = "api/message")
+    @RequestMapping(path = "api/hamming/previous")
     public String getMessage() {
         return msg;
     }
 
-    @RequestMapping ("api/hemming")
+    @RequestMapping ("api/hamming")
     public int calculateHammingWeight(@RequestParam("number") String number) {
         msg = number;
         int hammingWeight = 0;
